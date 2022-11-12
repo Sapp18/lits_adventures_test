@@ -8,6 +8,7 @@ class ExerciseOneScreen extends StatelessWidget {
   const ExerciseOneScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    /// Instanciando el provider del ejercicio 1
     return ListenableProvider(
       create: (_) => ExerciseOneProvider(),
       child: Builder(
@@ -20,6 +21,7 @@ class ExerciseOneScreen extends StatelessWidget {
   }
 }
 
+///Estructura principal del ejercicio 1
 class _ProjectBody extends StatelessWidget {
   final ExerciseOneProvider provider;
   const _ProjectBody({
@@ -56,9 +58,9 @@ class _ProjectBody extends StatelessWidget {
             onPressed: provider.diameter == 0.0
                 ? null
                 : () {
-                  provider.showResult = true;
-                  provider.calculate();
-                } ,
+                    provider.showResult = true;
+                    provider.calculate();
+                  },
           ),
           SizedBox(height: size.height * .05),
           provider.showResult

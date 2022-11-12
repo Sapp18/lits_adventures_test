@@ -8,6 +8,7 @@ class ExerciseTwoScreen extends StatelessWidget {
   const ExerciseTwoScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    /// Instanciando el provider del ejercicio 2
     return ListenableProvider(
       create: (_) => ExerciseTwoProvider(),
       child: Builder(
@@ -23,6 +24,7 @@ class ExerciseTwoScreen extends StatelessWidget {
   }
 }
 
+///Estructura principal del ejercicio 2
 class _ProjectBody extends StatelessWidget {
   final ExerciseTwoProvider provider;
   const _ProjectBody({

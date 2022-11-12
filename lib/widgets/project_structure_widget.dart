@@ -1,3 +1,4 @@
+/// Widget personalizado para la estructura principal del proyecto.
 import 'package:flutter/material.dart';
 
 class ProjectStructureWidget extends StatelessWidget {

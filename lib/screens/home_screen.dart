@@ -1,9 +1,10 @@
+/// Pantalla principal de la app
 import 'package:flutter/material.dart';
-import 'package:lits_adventures_test/providers/theme_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:lits_adventures_test/providers/providers.dart';
 import 'package:lits_adventures_test/routes/routes.dart';
 import 'package:lits_adventures_test/share_preferences/preferences.dart';
 import 'package:lits_adventures_test/widgets/widgets.dart';
-import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,12 +20,13 @@ class _HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.blueAccent,
         centerTitle: true,
         title: const Text('Lits Adventures Test'),
+        /// Switch para cambiar de tema a la app
         actions: [
           Switch.adaptive(
             value: Preferences.isDarkmode,
             onChanged: (value) {
               Preferences.isDarkmode = value;
-              //Instanciando el provider
+              /// Instanciando el provider del tema
               final themeProvider =
                   Provider.of<ThemeProvider>(context, listen: false);
               value
@@ -35,6 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+      /// Botones personalizados para navegar a las pantallas de los ejercicios
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [

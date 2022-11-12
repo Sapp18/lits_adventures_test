@@ -1,3 +1,4 @@
+/// Clase donde se definen y crean las rutas de la aplicación.
 import 'package:flutter/material.dart';
 import 'package:lits_adventures_test/screens/screens.dart';
 

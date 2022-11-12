@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+/// Widget personalizado para el botón.
 import 'package:lits_adventures_test/tools/app_typography.dart';
 
 class MainButtonWidget extends StatelessWidget {

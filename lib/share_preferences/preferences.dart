@@ -1,3 +1,4 @@
+/// Clase para el uso y configuración de las preferencias.
 import 'package:shared_preferences/shared_preferences.dart';
 
 class Preferences {

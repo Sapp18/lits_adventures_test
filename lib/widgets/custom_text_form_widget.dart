@@ -1,3 +1,4 @@
+/// Widget personalizado para los TextFormField.
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:lits_adventures_test/tools/app_typography.dart';

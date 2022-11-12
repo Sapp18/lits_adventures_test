@@ -1,3 +1,4 @@
+/// Clase para la manipulación y el estado de las variables del ejercicio 2.
 import 'package:flutter/material.dart';
 
 class ExerciseTwoProvider extends ChangeNotifier {
@@ -17,6 +18,9 @@ class ExerciseTwoProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+/// Funcion para calcular el número de horas trabajadas.
+/// Si las horas trabajadas es menor a 40, se le pagará a 10 la hora.
+/// Sino se obtiene las horas extras trabajadas y se calculará el nuevo salario.
   void calculate() {
     if (hoursWorked <= 40) {
       salary = hoursWorked * 10;

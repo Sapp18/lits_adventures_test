@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lits_adventures_test/providers/theme_provider.dart';
+import 'package:provider/provider.dart';
+import 'package:lits_adventures_test/providers/providers.dart';
 import 'package:lits_adventures_test/routes/routes.dart';
 import 'package:lits_adventures_test/share_preferences/preferences.dart';
-import 'package:provider/provider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

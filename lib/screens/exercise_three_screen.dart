@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:lits_adventures_test/routes/app_routes.dart';
+import 'package:lits_adventures_test/routes/routes.dart';
 import 'package:lits_adventures_test/tools/tools.dart';
 
+/// Estructura principal del ejercicio 3
 class ExerciseThreeScreen extends StatelessWidget {
   const ExerciseThreeScreen({Key? key}) : super(key: key);
   @override
@@ -12,9 +13,11 @@ class ExerciseThreeScreen extends StatelessWidget {
         centerTitle: true,
         title: const Text('Ejercicio 3'),
       ),
+      /// Se ocupó un ListView.builder para listar el widget personalizado
       body: ListView.builder(
         itemCount: 100,
         itemBuilder: (_, index) => GestureDetector(
+          /// Navegar hacia la otra pantalla, pasando como parametro en index
           onTap: () => Navigator.pushNamed(
             context,
             AppRoutes.valueScreen,
@@ -22,6 +25,7 @@ class ExerciseThreeScreen extends StatelessWidget {
               'value': index + 1,
             },
           ),
+          /// Creación del widget personalizado
           child: Padding(
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
             child: Container(

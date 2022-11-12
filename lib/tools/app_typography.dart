@@ -1,3 +1,4 @@
+/// Clase donde se definen y crean los estilos del texto.
 import 'package:flutter/material.dart';
 
 class AppTypography {

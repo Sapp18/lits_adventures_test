@@ -1,3 +1,4 @@
+/// Clase para la manipulación y el estado del tema de la app.
 import 'package:flutter/material.dart';
 
 class ThemeProvider extends ChangeNotifier {
